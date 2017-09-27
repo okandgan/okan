@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class common {
+	
+public static void main(String Args[]) {
+	Scanner scan=new Scanner(System.in);
+int makine=(int)(Math.random()*3);
+
+switch(makine) {
+case 0:
+	System.out.print("makinenin seçimi taş");
+	break;
+case 1:
+	System.out.print("makinenin seçimi kağıt");
+
+break;
+case 2:
+	System.out.print("makinenin seçimi makas:");
+break;
+
+
+}
+System.out.print("\n");
+System.out.print("*****************************************************\n\n");
+System.out.print("taş(0) kağıt(1) makas(2)"+"  "+"seçiminizi yapınız  \n");
+int seçim=scan.nextInt();
+switch(seçim) {
+case 0:
+	System.out.print("seçiminiz  tas");
+break;
+case 1:
+	System.out.print("seçiminiz kağıt");
+	break;
+case 2:
+	System.out.print("seçiminiz makas");
+	break;
+
+
+}
+System.out.print("\n\n");
+if(seçim==0&&makine==2||seçim==1&&makine==0||seçim==2&&makine==1) {
+	
+	System.out.print("siz kazandınız");
+	
+	
+
+}
+
+else{
+System.out.print("üzgünüz kaybettiniz");	
+	
+	
+}
+
+
+
+
+
+}}
