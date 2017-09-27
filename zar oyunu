@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class common {
+	
+public static void main(String Args[]) {
+int makine1=(int)(Math.random()*6);
+int makine2=(int)(Math.random()*6);
+System.out.print("bilgisayarın attığı zar:"+makine1+" "+makine2+"\n");
+
+int zar1=(int)(Math.random()*6);
+int zar2=(int )(Math.random()*6);
+System.out.print("senin zarın"+" "+zar1+" "+zar2+"\n");
+if(makine1==zar1&&makine2==zar2) {
+	System.out.print("10.00$ kazandın");
+	
+}
+else if(makine1==zar2&&makine2==zar1) {
+System.out.print("3,000$ kazandın");	
+	
+	
+}
+else if(makine1==zar1||makine1==zar2||makine2==zar1||makine2==zar2) {
+	
+	
+System.out.print("1,000$ kazandın");	
+	
+	
+	
+}
+else {
+System.out.print("birşey kazanamadın");
+}
+}}
