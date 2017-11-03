@@ -21,7 +21,8 @@ if(cevap==(sayı1-sayı2)) {
 System.out.print("verdiğiniz bilgi doğru");
 }
 else {	
-	System.out.print("verdiğiniz bilgi yanlış");
+	System.out.print("verdiğiniz bilgi yanlış\n");
+	System.out.print(sayı1+"-"+sayı2+"="+(sayı1-sayı2)+" olmalı");
 	
 }
 
@@ -37,6 +38,11 @@ else {
 
 	
 	
+	
+	
+}	
+	
+
 	
 	
 }	
