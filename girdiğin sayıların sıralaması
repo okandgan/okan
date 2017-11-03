@@ -1,0 +1,54 @@
+package okan;
+
+import java.util.Scanner;
+
+public class deneme {
+	
+		public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+		double x = input.nextDouble();
+		double y = input.nextDouble();
+		double z = input.nextDouble();
+		
+		if(x < y && y < z) {
+		System.out.println("girdiğiniz sayılar sıralı");		
+}
+	
+		else if(x<y&&z<y&&x<z){
+			 System.out.print("girmiş olduğunuz sayılar sıralı değil");
+				System.out.print(x+" "+z+" "+y);
+		
+			
+			
+			}else if(z>y&&x>z) {
+				System.out.print("girmiş olduğunuz sayılar sıralı değil");
+				System.out.print(y+""+z+""+x);
+				
+				
+			}
+			else if(x>y&&z>x) {
+				System.out.print("girmiş olduğunuz sayılar sıralı değil");
+				System.out.print(y+""+x+""+z);
+				
+				
+				
+				
+				
+			}
+		
+		else if(x>z&&y>x){
+			System.out.print("girmiş olduğunuz sayılar sıralı değil");
+		System.out.print(z+""+""+x+""+y);	
+			
+			
+			
+		}
+		else {
+			System.out.print("girmiş olduğunuz sayılar sıralı değil");
+			System.out.print(z+""+y+""+""+x);
+			
+			
+		}
+		}		
+		
+}
