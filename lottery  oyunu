@@ -1,0 +1,52 @@
+package okan;
+
+import java.util.Scanner;
+
+public class lottery {
+	public static void main(String Args[]) {
+	Scanner scan=new Scanner(System.in);
+    System.out.print("oyunumuza hoşgeldiniz");
+	System.out.print(" bir sayı giriniz");
+	int tahmin=scan.nextInt();
+	if(tahmin>10) {
+    int lottery=(int)(Math.random()*100);
+    System.out.println("makinenin tahmini: "+lottery);
+	int tahmin1=tahmin/10;
+	int tahmin2=tahmin%10;
+	int lottery1=lottery/10;
+	int lottery2=lottery%10;
+	if(tahmin1==lottery1&&tahmin2==lottery2) {
+		System.out.print("büyük ikramiye olan 10.0004$ kazandınız");
+		
+	}
+		
+		else if(tahmin1==lottery2&&tahmin2==lottery1) {
+			System.out.print("ikramiyeniz 3,000$");
+			
+			
+		}
+		else if(tahmin1==lottery1||tahmin1==lottery2||tahmin2==lottery1||tahmin2==lottery2) {
+			System.out.print("sizin ödülünüz 1,000$");
+			
+			
+			
+			
+		}
+		else {
+			System.out.print("ikramiye kazanamadınız"			);
+			
+			
+			
+		}
+		
+	}
+	else {
+		System.out.print("iki haneli bir sayı girmelisiniz");
+		
+		
+	}	
+		
+		
+	}
+
+}
