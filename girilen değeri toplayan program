@@ -1,0 +1,28 @@
+package okan;
+
+import java.util.Scanner;
+
+public class o {
+public static void main(String Args[]) {
+Scanner scan=new Scanner(System.in);
+System.out.print("0 dan farklı bir değer giriniz");
+int değer=scan.nextInt();
+
+int toplam=0;
+while(değer!=0) {
+	toplam+=değer;
+System.out.print("0 dan farklı bir değer giriniz\n");	
+değer=scan.nextInt();
+
+	
+	
+	
+	
+	
+}
+	System.out.print(toplam);
+	
+	
+	
+}
+}
