@@ -1,0 +1,43 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class çıkarmaprogramı {
+public static  void main(String Args[]) {
+Scanner scan=new Scanner(System.in);
+int sayı1=(int)(Math.random()*10);
+int sayı2=(int)(Math.random()*10);
+if(sayı1<sayı2) {
+int t;
+t=sayı1;
+sayı1=sayı2;
+sayı2=t;
+	
+	
+}
+System.out.print(sayı1+"-"+sayı2+"= ?");
+int cevap=scan.nextInt();
+if(cevap==(sayı1-sayı2)) {
+System.out.print("verdiğiniz bilgi doğru");
+}
+else {	
+	System.out.print("verdiğiniz bilgi yanlış");
+	
+}
+
+	
+	
+	
+	
+}
+
+
+
+
+
+	
+	
+	
+	
+}	
+	
