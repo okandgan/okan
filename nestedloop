@@ -1,0 +1,46 @@
+package okan;
+
+import java.util.Scanner;
+
+public class nestedloop {
+	public static void main(String Args[]) {
+		Scanner scan=new Scanner(System.in);
+		
+	System.out.println("tablomuza hoşgeldiniz");
+	System.out.print("  ");
+	for(int k=1;k<=9;k++) {
+		System.out.printf("%4d",k);
+		
+		
+	}
+	System.out.println("\n----------------------------------------");
+	
+	for(int i=1;i<10;i++) {
+		System.out.print(i+"|");
+	
+	for(int j=1;j<10;j++) {
+		System.out.printf("%4d", i * j);
+		
+		
+		
+		
+	}	
+	System.out.print("  \n");	
+		
+		
+		
+		
+		
+	}
+	
+
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
