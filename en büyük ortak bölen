@@ -1,0 +1,34 @@
+package okan;
+
+import java.util.Scanner;
+
+public class slö {
+public static void main(String Args[]) {
+Scanner scan=new Scanner(System.in);
+System.out.print("ilk sayıyı giriniz");
+int ilk=scan.nextInt();
+System.out.print("ikinci sayıyı giriniz"	);
+int ikinci=scan.nextInt();
+int son=1;
+int bölen=2;
+while(bölen<=ilk&&bölen<=ikinci) {
+if(ilk%bölen==0&&ikinci%bölen==0) 
+	son=bölen;
+	bölen++;
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+}
+System.out.print(ilk+" sayısının "+"ve "+ikinci+" sayısının  "+ "en büyük ortak böleni  "+ son);
+	
+	
+	
+	
+}}
