@@ -1,0 +1,37 @@
+package projeler;
+import java.util.Scanner;
+public class alıştırma1 {
+public static void main (String Args[]) 
+{
+	Scanner scan=new Scanner(System.in);
+	 int dizi[], dizi_uzunluğu,büyük;
+	
+	 System.out.print("kaç tane değer girmek istiyosunuz");
+	 dizi_uzunluğu=scan.nextInt();
+	 dizi=new int[dizi_uzunluğu];
+	 
+	 for(int i=0;i<dizi_uzunluğu;i++) {
+	System.out.print(i+1+".sayı");
+	int seçenek=scan.nextInt();
+		 
+		 dizi[i]=seçenek;
+	 
+		 
+	 }
+	 büyük=dizi[0];
+	 for(int i=0;i<dizi.length;i++) {
+		 
+		 if(büyük<dizi[i]) {
+		 
+			 
+		büyük=dizi[i];	 
+			 
+			 
+			 
+		 }
+		 
+		 
+	 }
+	
+	System.out.print("dizini en büyük sayısı "+büyük);
+}}
