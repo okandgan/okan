@@ -1,0 +1,22 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class fibonacci {
+public static void main(String args[]) {
+Scanner scan=new Scanner(System.in);
+System.out.print("ilk saıyıyı  giriniz");
+int ilk=scan.nextInt();
+
+System.out.print("ikinci sayıyı giriniz");
+int ikinci=scan.nextInt();
+int toplam=ilk+ikinci;
+System.out.println(ilk+"\n"+ikinci+"\n"+toplam);
+for(int i=0;i<10;i++) {
+ilk=ikinci;
+ikinci=toplam;
+toplam=ilk+ikinci;
+	
+	System.out.println(toplam);
+}
+}
