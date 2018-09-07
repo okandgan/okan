@@ -1,0 +1,35 @@
+package projeler2;
+
+public class notortalama {
+public static void main(String Args[]) {
+
+	
+for(int i=0;i<20;i++) {
+
+for(int k=0;k<=i;k++) {
+System.out.print("*");	
+	
+	
+	
+}
+	System.out.println("");
+	
+	
+	
+	
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+}
+
+
+
