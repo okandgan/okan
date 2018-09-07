@@ -1,0 +1,39 @@
+package projeler2;
+
+import java.util.Scanner;
+
+public class notortalama {
+public static void main(String Args[]) {
+Scanner scan=new Scanner(System.in);
+System.out.print("Bir sayı değeri giriniz ");
+int sayı=scan.nextInt();
+int toplam=0;
+
+do {
+	toplam+=sayı%10;
+	
+	
+	sayı/=10;
+	
+}
+	
+	
+	
+	
+	
+
+while(sayı>0);
+
+
+
+System.out.print( " Sayısının  basamak değerleri toplamı:"+toplam);
+
+}
+
+
+
+
+	
+	
+	
+}
