@@ -1,0 +1,104 @@
+package okan;
+
+import java.util.Scanner;
+
+public class yenibiriş {
+public static void main(String Args[]) {
+Scanner scan=new Scanner(System.in);
+System.out.println("ATM\n"
+		+ "********************************");
+String işlemler="işlemler\n"
+		+ "---------------------\n"
+		
+
+		+ "1.işlem bakiye öğrenme\n"
+		+ "2.işlem para çekme\n"
+		+ "3.işlem para yatırma\n"
+		+ "çıkmak için q basınız";  
+	System.out.println(işlemler);
+	
+System.out.println("********************************");
+int bakiye=1500;
+
+while(true) {
+
+
+	System.out.print("işlem yapınız: ");
+
+String işlem=scan.nextLine();
+if(işlem.equals("1")) {
+	System.out.println("bakiyeniz:  "+bakiye);
+
+	
+}	
+
+
+
+else if(işlem.equals("2")) {
+
+	System.out.print("ne kadar çekmek istiyosunuz");
+
+	int tutar=scan.nextInt();
+	if(tutar>bakiye) {
+		System.out.print("bakiyenizde yeteri kadar para yoktur");
+		scan.nextLine();
+		
+	}
+	else {
+scan.nextLine();
+bakiye-=tutar;
+System.out.println("yeni bakiyeniz:  "+bakiye);
+	}
+	
+}	
+else if(işlem.equals("3")) {
+System.out.print("ne kadar yatırmak istiyosunuz");
+int tutar=scan.nextInt();
+scan.nextLine();
+bakiye+=tutar;
+System.out.println("yeni bakiyeniz: "+bakiye		);
+
+
+
+
+}	
+else if(işlem.equals("q")){
+	System.out.print("programdan çıkılıyor.........");
+	break;
+
+	
+}
+	
+else {
+	
+	System.out.println("yetkisiz bir giriş yaptınız");
+
+	
+}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+}
+	
+}
+
+
+	
