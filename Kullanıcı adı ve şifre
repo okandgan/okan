@@ -1,0 +1,74 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class kullanıcıadı_şifre {
+public static void main(String args[]) {
+Scanner scan=new Scanner(System.in);
+
+int giriş_hakkı=4;
+String kullanıcı_adı="okan";
+int kullanıcı_şifre=123;
+
+while(true) {
+	System.out.print("Kullanıcı adınızı Giriniz: ");
+	String  kullanıcıadı=scan.nextLine();
+	System.out.print("Şifrenizi Giriniz: ");
+	int şifre=scan.nextInt();
+if(kullanıcı_adı.equals(kullanıcıadı)&&kullanıcı_şifre==şifre) {
+	
+	System.out.print("kullanıcı adınız ve şifreniz doğru Hoşgeldiniz:"+" " +kullanıcı_adı  +" bey");
+	
+	
+	
+	break;
+	
+	
+	
+}	
+	
+else if(kullanıcı_adı.equals(kullanıcıadı)&&kullanıcı_şifre!=şifre)
+{
+	
+System.out.println("şifrenizi yanlış girdiniz");
+
+giriş_hakkı-=1;
+
+scan.nextLine();
+
+
+}
+else if(!kullanıcı_adı.equals(kullanıcıadı)&&kullanıcı_şifre==şifre) {
+	
+	System.out.println("Kullanıcı adınızı yanlış girdiniz");
+	
+giriş_hakkı-=1;
+scan.nextLine();
+}
+
+else {
+	
+	
+	System.out.println("kullanıcı adınız ve şifreniz yanlış.");
+	
+scan.nextLine();
+
+}
+if(giriş_hakkı==0) {
+	System.out.print("giriş hakkıknızı doldurdunuz...................");
+	
+	break;
+}
+	
+	
+}
+	
+	
+	
+}
+
+	
+}	
+	
+	
+	
