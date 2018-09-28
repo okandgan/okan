@@ -1,0 +1,42 @@
+package okan;
+
+import java.util.Scanner;
+
+public class yaşa {
+public static void main(String Args[]) {
+Scanner scan=new Scanner(System.in);
+
+
+while(true) {
+	
+	
+	System.out.print("Ne kadar para yatırmak istiyosunuz");
+	int bakiye=scan.nextInt();
+	System.out.print("Ne kadar vade istiyosunuz");
+	int vade=scan.nextInt();
+	
+	for(int i=1;i<=vade;i++)
+	{
+	
+		bakiye+=(bakiye*6)/100;
+		System.out.println(i+". yıl sonunda yatırdığınız paranın paranın vadesi:"+bakiye);
+		
+		
+		
+		
+		
+		
+	}	
+	break;
+	
+	
+	
+	
+	
+}
+
+
+
+	
+	
+	
