@@ -1,0 +1,48 @@
+package okan;
+
+import java.util.Scanner;
+
+public class asalsayı {
+public static boolean asalmı(int sayı) {
+	
+	for(int i=2;i<sayı;i++) {
+		
+		if(sayı%i==0) {
+			
+			return false;
+			
+		}}
+	
+	
+	return  true;
+	
+	
+
+}
+		
+
+	
+	public static void main(String Args[])	
+{
+		Scanner scan=new Scanner(System.in);
+		System.out.print("sayı giriniz");
+		int giriş=scan.nextInt();
+		
+for(int i=2;i<giriş;i++) {
+	
+if(asalmı(i)) {
+	
+	System.out.println(i);
+	
+}
+	
+	
+	
+}
+
+
+}
+	
+	
+
+}
